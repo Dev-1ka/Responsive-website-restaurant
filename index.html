@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="icon" href="images/logo.png" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="logo">Sunday Bite</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="order.html">Menu</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="enquiry.html">Contact</a></li>
+    </ul>
+  </nav>
+
+    <section class="hero">
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <h1>The Sunday Bite</h1>
+      <p>Delicious food for every mood</p>
+      <a href="order.html" class="btn-order">ORDER NOW</a>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-container">
+
+    <div class="about-image">
+      <img src="images/about.png" alt="Restaurant interior">
+    </div>
+
+    <div class="about-text">
+      <h2>About Sunday Bite</h2>
+      <p>
+        Sunday Bite is a cozy restaurant serving delicious food made with
+        fresh ingredients and authentic flavors. From refreshing mojitos to
+        traditional biryani and delightful desserts, we create meals that
+        bring people together and make every moment special.
+      </p>
+      <p>
+        Our mission is to provide a warm dining experience with quality,
+        taste, and comfort at the heart of everything we serve.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<br>
+
+<div class="image-section">
+
+  <h2>Image Control</h2>
+  <br>
+  <div class="image-box">
+    <img src="images/f1.png" class="img-control">
+    <img src="images/f2.png" class="img-control">
+    <img src="images/f3.jpg" class="img-control">
+  </div>
+</div>
+
+<div>
+
+  <div class="controls">
+    <select id="action">
+      <option value="hide">Hide</option>
+      <option value="show">Show</option>
+      <option value="fadeIn">Fade In</option>
+      <option value="fadeOut">Fade Out</option>
+    </select>
+
+    <button onclick="applyEffect()">Apply</button>
+  </div>
+
+</div>
+
+
+
+
+  <div class="menu-section" id="menu">
+  <h2>Today's Specials</h2>
+  <div id="menuAccordion">
+
+    <h3>Mojitos</h3>
+    <div>
+      <div class="menu-item">
+        <span>Blue Mint Mojito</span>
+        <span class="price">₹80</span>
+      </div>
+      <div class="menu-item">
+        <span>Lemon Mint Mojito</span>
+        <span class="price">₹120</span>
+      </div>
+      <div class="menu-item">
+        <span>Musk Melon Mojito</span>
+        <span class="price">₹130</span>
+      </div>
+      <div class="menu-item">
+        <span>Green Apple Mojito</span>
+        <span class="price">₹180</span>
+      </div>
+    </div>
+
+    <h3>Main Course</h3>
+    <div>
+      <div class="menu-item">
+        <span>Grilled Chicken</span>
+        <span class="price">₹320</span>
+      </div>
+      <div class="menu-item">
+        <span>Thalassery Dum Biryani</span>
+        <span class="price">₹260</span>
+      </div>
+      <div class="menu-item">
+        <span>Mutton Mandhi</span>
+        <span class="price">₹290</span>
+      </div>
+      <div class="menu-item">
+        <span>Ghee Rice + Beef Combo</span>
+        <span class="price">₹310</span>
+      </div>
+    </div>
+
+    <h3>Desserts</h3>
+    <div>
+      <div class="menu-item">
+        <span>Chocolate Cake</span>
+        <span class="price">₹150</span>
+      </div>
+      <div class="menu-item">
+        <span>Ice Cream</span>
+        <span class="price">₹90</span>
+      </div>
+      <div class="menu-item">
+        <span>Tiramisu</span>
+        <span class="price">₹180</span>
+      </div>
+      <div class="menu-item">
+        <span>Classic Baked Alaska</span>
+        <span class="price">₹120</span>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+<hr />
+
+<footer class="footer">
+    <p>© 2026 Sunday Bite Restaurant | All Rights Reserved</p>
+</footer>
+
+ <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+body {
+    font-family: Poppins, sans-serif;
+    background: #fca0a0b6;
+    margin: 0;
+}
+
+.enquiry {
+    max-width: 400px;
+    margin: 60px auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: both;
+    min-height: 80px;
+}
+
+button {
+    background: #580000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #810000;
+}
+
+
+.footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORDER PAGE</title>
+    <link rel="icon" href="images/logo.png" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="css/order.css">
+</head>
+<body>
+    <h3>PLACE YOUR ORDER!</h3>
+    <table>
+            <tr>
+                <th>Select</th>
+                <th>Item</th>
+                <th>Price (₹)</th>
+            </tr>
+            <tr>
+                <td><input type="checkbox" value="Pizza" data-price="120"></td>
+                <td>Pizza</td>
+                <td>120</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" value="Burger" data-price="80"></td>
+                <td>Burger</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" value="Sandwich" data-price="60"></td>
+                <td>Sandwich</td>
+                <td>60</td>
+            </tr>
+        </table>
+        <br><br>
+
+        <label>Quantity:</label>
+        <input type="number" id="qty" min="1" placeholder="Enter quantity">
+        <br><br>
+
+        <br>
+        <button onclick="addToBill()">Add to Bill</button>
+        <br><br>
+
+        <h2>Bill</h2>
+
+        <table id="billTable">
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Total (₹)</th>
+            </tr>
+        </table>
+
+        <h3>Total Amount: ₹ <span id="grandTotal">0.00</span></h3>
+
+        <br><br>
+        <script src="js/script.js"></script>
+</body>
+</html>
